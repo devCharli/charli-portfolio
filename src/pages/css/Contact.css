@@ -1,0 +1,33 @@
+.contact {
+  background: #00071c;
+  padding: 100px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-icons a {
+  font-size: 36px;
+  cursor: pointer;
+  padding: 0 6px;
+  margin: 10px;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+}
+
+.copy-right {
+  position: absolute;
+  bottom: 16px;
+}
+
+.contact-icons a:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 768px) {
+}

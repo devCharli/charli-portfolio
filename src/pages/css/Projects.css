@@ -1,0 +1,158 @@
+.projects {
+  color: #121212;
+  border-top: 1px dashed #dedede;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.project-container {
+  max-width: 1200px;
+  padding: 100px 0;
+}
+
+.preview-btns {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.preview-btns button {
+  background-color: #eeeef1;
+  width: 25px;
+  height: 25px;
+  margin: 0 16px 0px 0px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+
+.preview-btns button:hover {
+  background-color: salmon;
+  transform: scale(1.2);
+}
+
+.preview-btns button.active {
+  background-color: salmon;
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.contents {
+  display: flex;
+  padding: 20px;
+  border: none;
+}
+
+.project {
+  display: none;
+}
+
+.project-left {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.project.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  animation: show 1s ease-in;
+}
+
+.project-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.stack {
+  padding-bottom: 10px;
+}
+
+.project-description {
+  text-align: justify;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-left {
+  width: 100%;
+  height: auto;
+  background: rgba(113, 121, 143, 0.03);
+}
+
+.description {
+  padding: 24px 11.111%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+.stack {
+  display: flex;
+}
+
+.code-btns {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.code-btns a {
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 0.5px solid salmon;
+  padding: 5px 10px;
+  margin: 20px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: #121212;
+}
+
+.code-btns a:hover {
+  background-color: salmon;
+  color: #fff;
+}
+
+.project > img {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 100px 0;
+  }
+
+  .project.active {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  img {
+    display: none;
+  }
+
+  .project-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
