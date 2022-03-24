@@ -23,8 +23,8 @@ export default function Projects() {
         "A simple money management application with authentication functionality. The app is designed with Tailwind CSS and provides dark/light mode. Users can sign up with their emails and all the data is stored in the Firestore database.",
       picture: money,
       show: true,
-      url: "https://slp-blog.netlify.app/",
-      github: "https://github.com/devCharli/gatsby-blog-project",
+      url: "https://mywallet-594e6.firebaseapp.com/",
+      github: "https://github.com/devCharli/first-firebase-project",
     },
     {
       id: 1,
